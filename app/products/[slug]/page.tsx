@@ -2,6 +2,8 @@ import { searchProductById } from "@/lib/api";
 import Image from "next/image";
 import type { Metadata } from "next";
 
+export const runtime = "nodejs"; // for vercel
+
 export async function generateMetadata({
   params,
 }: {

@@ -5,6 +5,8 @@ import Link from "next/link";
 import { redirect } from "next/navigation";
 import type { Metadata } from "next";
 
+export const runtime = "nodejs"; // for vercel
+
 export default async function PLPPage(props: {
   searchParams?: Promise<{
     limit?: string;
