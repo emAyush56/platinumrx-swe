@@ -1,5 +1,7 @@
 # PlatinumRx Assignment 2026
 
+[Live - https://platinumrx-asg.vercel.app/](https://platinumrx-asg.vercel.app/?limit=5)
+
 Project Setup:
 
 - Clone the repository
