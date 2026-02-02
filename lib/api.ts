@@ -1,4 +1,4 @@
-export const runtime = "nodejs"; // for vercel
+// export const runtime = "nodejs"; // for vercel
 
 export type Product = {
   id: number;
@@ -17,6 +17,9 @@ export async function searchProducts(limit?: string): Promise<Product[]> {
   if (limit) url.searchParams.set("limit", limit);
 
   const res = await fetch(url.toString(), {
+    headers: {
+      "User-Agent": "NextJS-Vercel-PLP",
+    },
     next: { revalidate: 3600 }, // ISR for SEO + performance
   });
 
@@ -27,6 +30,9 @@ export async function searchProducts(limit?: string): Promise<Product[]> {
 
 export async function searchProductById(id: string): Promise<Product> {
   const res = await fetch(`${BASE_URL}/products/${id}`, {
+    headers: {
+      "User-Agent": "NextJS-Vercel-PLP",
+    },
     next: {
       revalidate: 3600, // ISR for SEO + performance
     },
