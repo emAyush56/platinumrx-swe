@@ -1,4 +1,4 @@
-
+export const runtime = "nodejs"; // for vercel
 
 export type Product = {
   id: number;
