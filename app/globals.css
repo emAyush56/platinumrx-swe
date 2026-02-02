@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+:root {
+  --radius: 0rem;
+  --background: theme(colors.white);
+  --foreground: theme(colors.stone.900);
+  --primary: theme(colors.stone.900);
+  --primary-foreground: theme(colors.white);
+  --secondary: theme(colors.stone.500);
+  --secondary-foreground: theme(colors.stone.900);
+  --accent-1: #497d00;
+  --accent-2: #eae248;
+  --accent-2-foreground: theme(colors.stone.900);
+  --accent-foreground: theme(colors.white);
+  --destructive: theme(colors.red.600);
+  --success: theme(colors.green.600);
+  --border-1: theme(colors.stone.200);
+  --border-2: theme(colors.stone.400);
+  --border-3: theme(colors.stone.500);
+  --border-4: theme(colors.stone.600);
+  --input-border: var(--border-1);
+  --input-border-focus: var(--border-2);
+  --input-placeholder: theme(colors.stone.500);
+  --input-text: var(--primary);
+}
+
+@theme {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent-1: var(--accent-1);
+  --color-accent-2: var(--accent-2);
+  --color-accent-2-foreground: var(--accent-2-foreground);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-success: var(--success);
+  --color-border-1: var(--border-1);
+  --color-border-2: var(--border-2);
+  --color-border-3: var(--border-3);
+  --color-border-4: var(--border-4);
+  --color-input-border: var(--input-border);
+  --color-input-border-focus: var(--input-border-focus);
+  --color-input-placeholder: var(--input-placeholder);
+  --color-input-text: var(--input-text);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-primary);
+}
